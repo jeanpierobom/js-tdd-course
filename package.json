@@ -21,7 +21,7 @@
   },
   "scripts": {
     "build": "./node_modules/.bin/webpack --colors --progress --mode development --optimize-minimize",
-    "lint": "./node_modules/.bin/eslint src/*.js",
+    "lint": "./node_modules/.bin/eslint src/*.js --color",
     "prepush": "npm run lint",
     "watch": "npm run build --watch",
     "test": "mocha tests/**/*.spec.js"
