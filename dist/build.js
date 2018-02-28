@@ -66,38 +66,10 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/app.js");
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./app.js":
-/*!****************!*\
-  !*** ./app.js ***!
-  \****************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var ramda__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ramda */ "./node_modules/ramda/es/index.js");
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils */ "./utils.js");
-
-
-
-
-const arr1 = [2, 3, 5, 0, 9, 8, 6, 5, 4];
-const arr2 = [7, 2, 3, 1, 9, 18, 11, -1, 0];
-
-const arr3 = ramda__WEBPACK_IMPORTED_MODULE_0__["union"](arr1, arr2);
-
-console.log(arr3);
-
-console.log(Object(_utils__WEBPACK_IMPORTED_MODULE_1__["default"])(3, 5));
-console.log(Object(_utils__WEBPACK_IMPORTED_MODULE_1__["sub"])(4, 2));
-console.log('updated.');
-
-/***/ }),
 
 /***/ "./node_modules/ramda/es/F.js":
 /*!************************************!*\
@@ -15667,10 +15639,38 @@ var zipWith = /*#__PURE__*/Object(_internal_curry3__WEBPACK_IMPORTED_MODULE_0__[
 
 /***/ }),
 
-/***/ "./utils.js":
-/*!******************!*\
-  !*** ./utils.js ***!
-  \******************/
+/***/ "./src/app.js":
+/*!********************!*\
+  !*** ./src/app.js ***!
+  \********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var ramda__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ramda */ "./node_modules/ramda/es/index.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils */ "./src/utils.js");
+
+
+
+
+const arr1 = [2, 3, 5, 0, 9, 8, 6, 5, 4];
+const arr2 = [7, 2, 3, 1, 9, 18, 11, -1, 0];
+
+const arr3 = ramda__WEBPACK_IMPORTED_MODULE_0__["union"](arr1, arr2);
+
+console.log(arr3);
+
+console.log(Object(_utils__WEBPACK_IMPORTED_MODULE_1__["default"])(3, 5));
+console.log(Object(_utils__WEBPACK_IMPORTED_MODULE_1__["sub"])(4, 2));
+console.log('updated.');
+
+/***/ }),
+
+/***/ "./src/utils.js":
+/*!**********************!*\
+  !*** ./src/utils.js ***!
+  \**********************/
 /*! exports provided: sub, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
